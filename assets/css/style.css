@@ -1,0 +1,56 @@
+/*reset whole page*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --big-size: 50px;
+}
+
+
+/*center text and evenly spaced*/
+.topScore, .header, .subtitle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+/*adjust text size for the page*/
+.topScore{
+    font-size: 45px;
+}
+
+.header{
+    font-size: 60px;
+}
+
+.subtitle{
+    font-size: var(--big-size);
+    text-align: center;
+}
+
+/*center the button and make it bigger*/
+.btn-start{
+    position: relative;
+    left: 45%;
+    font-size: 45px;
+}
+
+
+/*media screens are to make sure everything was centered*/
+@media screen and (max-width: 900px){
+   
+    .btn-start{
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        text-align: center;
+    }
+}
+
